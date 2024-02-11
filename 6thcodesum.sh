@@ -3,4 +3,7 @@
 NUMBER1=$1
 NUMBER2=$2
 
-echo "Total= $(($NUMBER1+$NUMBER2))"
+SUM=$(($NUMBER1+$NUMBER2))
+
+echo "Toatal:: $SUM"
+
