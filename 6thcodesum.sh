@@ -7,3 +7,8 @@ SUM=$(($NUMBER1+$NUMBER2))
 
 echo "Toatal:: $SUM"
 
+echo "How many args passed:: $#"
+
+echo "All args passed:: $@"
+
+echo "script name:: $0"
