@@ -9,7 +9,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-VALIDATE( ){
+VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo -e "$2... $R FAILED $N" 
@@ -32,10 +32,9 @@ do
     if [ $? -ne 0 ]
     then
         yum install $package -y
-        VALIDATE $? "Installing package" &>>LOGFILE
-        exit 1
+        VALIDATE $? "Installing $package" &>>LOGFILE
     else
-        echo -e "Package already installed $Y SKIPPING $N"
+        echo -e "$Package already installed... $Y SKIPPING $N"
     fi
 
 done
