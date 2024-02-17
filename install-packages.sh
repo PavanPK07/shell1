@@ -29,7 +29,7 @@ fi
 for package in $@
 do
     yum list installed $package
-    if $? -ne 0
+    if [ $? -ne 0 ]
     then
         yum install $package -y
         VALIDATE $? "Installing package" &>>LOGFILE
