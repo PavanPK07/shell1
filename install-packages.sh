@@ -33,6 +33,7 @@ do
     then
         yum install $package -y
         VALIDATE $? "Installing package" &>>LOGFILE
+        exit 1
     else
         echo -e "Package already installed $Y SKIPPING $N"
     fi
