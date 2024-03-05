@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DISK_USAGE=$(df-hT | grep -vE "tmp|file")
+DISK_USAGE=$(df -hT | grep -vE "tmp|file")
 DISK_THRESOLD=1
 message=""
 
