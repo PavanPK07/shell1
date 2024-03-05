@@ -2,10 +2,10 @@
 
 SOURCE_DIR="/temp/shellscript-logs"
 
-R="/e[31m"
-G="/e[32m"
-Y="/e[33m"
-N="/E[0m"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\E[0m"
 
 if [ ! -d $SOURCE_DIR ]
 then
